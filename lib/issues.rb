@@ -27,6 +27,10 @@ class Redmined::Issues
 		end
 	end
 	
+	def find(number)
+		Redmined::Issue.new(session,number)
+	end
+	
 	def each
 		get.each { |issue| yield(issue) if block_given? }
 	end

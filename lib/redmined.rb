@@ -1,2 +1,2 @@
 Redmined = Module.new
-%w( rubygems session issues issue ).each { |f| require f }
+%w( rubygems session wiki page issues issue ).each { |f| require f }

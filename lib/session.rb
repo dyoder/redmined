@@ -17,4 +17,8 @@ class Redmined::Session
 		@issues ||= Redmined::Issues.new(self,project)
 	end
 	
+	def wiki(project)
+		@wiki ||= Redmined::Wiki.new(self,project)
+	end
+	
 end
